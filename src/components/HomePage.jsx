@@ -63,7 +63,7 @@ export default function HomePage(props) {
   return (
     <main className='flex-1 p-4 flex flex-col text-center gap-3 sm:gap-4 justify-center'>
       <h1 className='font-semibold sm:text-5xl md:text-7xl text-5xl'>Tran<span className='text-blue-400 bold'>Script</span>o</h1>
-      <h3 className='font-medium md:text-lg'>Record <span className='text-blue-400'>&rarr;</span> Transcribe <span>&rarr;</span> Translate</h3>
+      <h3 className='font-medium md:text-lg'>Record <span className='text-blue-400'>&rarr;</span> Transcribe </h3>
       <button className='flex items-center specialButton rounded-xl px-4 py-2 text-base justify-between gap-4 mx-auto w-72 max-w-full my-4' onClick={recordingStatus === 'recording' ? stopRecording : startRecording}>
         <p className='text-blue-400'>{recordingStatus === 'inactive' ? 'Record' : `Stop Recording`}</p>
         <div className='flex items-center gap-2'>
@@ -82,7 +82,7 @@ export default function HomePage(props) {
           }} className='hidden' type='file' accept='.mp3,.wave' />
         </label> a mp3 file
       </p>
-      <p className='italic text-slate-500'><span className='text-slate-400'>Free</span> Now <span className='text-blue-400'>Free</span> Forever!!</p>
+      
     </main>
   )
 }
