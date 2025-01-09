@@ -41,7 +41,7 @@ async function transcribe(audio) {
     await pipeline(audio, {
         top_k: 0,
         do_sample: false,
-        chunk_length: 30,
+        chunk_length: audio.duration,
         stride_length_s,
         return_timestamps: true,
         callback_function: generationTracker.callbackFunction.bind(generationTracker),
