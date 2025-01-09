@@ -79,7 +79,7 @@ export default function HomePage(props) {
           <input onChange={(e) => {
             const tempFile = e.target.files[0]
             setFile(tempFile)
-          }} className='hidden' type='file' accept='.mp3,.wave' />
+          }} className='hidden' type='file' accept='.mp3,.wave,.flac' />
         </label> a mp3 file
       </p>
       
